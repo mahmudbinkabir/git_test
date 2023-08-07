@@ -1,0 +1,13 @@
+xampp apache web server stoped in ubuntu
+-----------------------------------------
+1.sudo apachectl stop
+
+2.sudo service apache apache2 status
+
+laravel permission
+-------------------
+1.cd {laravel_root}/storage
+2.mkdir -pv framework/views app framework/sessions framework/cache
+3.cd ..
+4.chmod 777 -R storage
+5.chown -R www-data:www-data storage
